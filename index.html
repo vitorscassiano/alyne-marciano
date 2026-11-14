@@ -5,12 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ✏️ EDITE: título e descrição que aparecem no Google e redes sociais -->
-  <title>Alyne Marciano | Neuropsicologia · Avaliação e Reabilitação Integrada</title>
-  <meta name="description" content="Alyne Marciano — Psicóloga e Fonoaudióloga, especialista em Neuropsicologia. Avaliação neuropsicológica para crianças, adolescentes, adultos e idosos, Programa REAB de reabilitação integrada e psicoterapia. Vila da Penha, Rio de Janeiro." />
+  <title>Alyne Marciano | Neuropsicóloga, Psicóloga e Fonoaudióloga na Vila da Penha (RJ)</title>
+  <meta name="description" content="Alyne Marciano — Psicóloga e Fonoaudióloga, especialista em Neuropsicologia. Avaliação neuropsicológica e fonoaudiológica para crianças, adolescentes, adultos e idosos, Programa REAB e psicoterapia na Vila da Penha, Rio de Janeiro." />
+  <meta name="robots" content="index, follow" />
+  <!-- ✏️ EDITE: endereço definitivo do site (usado pelo Google e redes sociais) -->
+  <link rel="canonical" href="https://alynemarciano.com.br/" />
+  <meta name="geo.region" content="BR-RJ" />
+  <meta name="geo.placename" content="Vila da Penha, Rio de Janeiro" />
+
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Alyne Marciano | Avaliação e Reabilitação Integrada" />
-  <meta property="og:description" content="Avaliação neuropsicológica, Programa REAB e psicoterapia com um olhar interdisciplinar para cada pessoa. Vila da Penha, Rio de Janeiro." />
+  <meta property="og:site_name" content="Alyne Marciano · Neuropsicologia" />
+  <meta property="og:url" content="https://alynemarciano.com.br/" />
+  <meta property="og:title" content="Alyne Marciano | Neuropsicologia na Vila da Penha (RJ)" />
+  <meta property="og:description" content="Avaliação neuropsicológica e fonoaudiológica, Programa REAB e psicoterapia. Psicóloga e Fonoaudióloga especialista em Neuropsicologia na Vila da Penha, Rio de Janeiro." />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Dados estruturados: ajudam o Google a mostrar endereço e contatos nas buscas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Alyne Marciano · Neuropsicologia",
+    "description": "Avaliação neuropsicológica e fonoaudiológica, Programa REAB de reabilitação integrada e psicoterapia para crianças, adolescentes, adultos e idosos.",
+    "url": "https://alynemarciano.com.br/",
+    "email": "psicologiaefonoaudiologia@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Padre Roser, 42 (Punto Offices)",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Rio de Janeiro",
+    "founder": {
+      "@type": "Person",
+      "name": "Alyne Marciano",
+      "jobTitle": "Psicóloga e Fonoaudióloga, especialista em Neuropsicologia"
+    },
+    "sameAs": [
+      "https://www.instagram.com/alyne_marciano/",
+      "https://www.tiktok.com/@alynegouveia7"
+    ]
+  }
+  </script>
   <meta name="theme-color" content="#FAF8F4" />
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235F7F6E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19c0-8 5-13 14-14-1 9-6 14-14 14Z'/%3E%3Cpath d='M5 19c3-4 6-7 10-9'/%3E%3C/svg%3E" />
@@ -19,8 +57,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -30,8 +68,8 @@
        ✏️ GUIA RÁPIDO DE EDIÇÃO
        Todos os textos do site estão neste arquivo, separados por
        seção. Procure pelos comentários "✏️ EDITE" para saber onde
-       trocar cada informação. O número do WhatsApp fica no script.js
-       e as cores ficam no início do styles.css.
+       trocar cada informação. O número do WhatsApp fica em assets/js/script.js
+       e as cores no início de assets/css/styles.css. Fotos vão em assets/img/.
        ═══════════════════════════════════════════════════════════ -->
 
   <!-- ════════════ CABEÇALHO / MENU ════════════ -->
@@ -50,7 +88,7 @@
       <nav class="nav" id="nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
         <a href="#infancia">Infância e Adolescência</a>
-        <a href="#adulto">Adulto e Gerontologia</a>
+        <a href="#adulto">Adulto e Envelhecimento</a>
         <a href="#reab">Programa REAB</a>
         <a href="#psicoterapia">Psicoterapia</a>
         <a href="#sobre">Sobre Alyne</a>
@@ -84,25 +122,24 @@
 
           <!-- ✏️ EDITE: texto de apoio do topo -->
           <p class="lead">
-            Sou Alyne Marciano, Neuropsicóloga, Psicóloga e Fonoaudióloga, com atuação
-            interdisciplinar em avaliação e reabilitação funcional.
-          </p>
-          <p class="lead lead-sub">
-            Avaliação, acompanhamento terapêutico e reabilitação com um olhar
-            interdisciplinar para cada pessoa.
+            Sou Alyne Marciano, Psicóloga e Fonoaudióloga, especialista em Neuropsicologia.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" data-wa href="#">Agendar uma avaliação</a>
-            <a class="btn btn-ghost" href="#atendimentos">Conheça os atendimentos</a>
-          </div>
+          <!-- ✏️ EDITE: atendimentos em destaque -->
+          <ul class="hero-servicos" aria-label="Atendimentos">
+            <li>Avaliação Neuropsicológica e Fonoaudiológica</li>
+            <li>Psicoterapia</li>
+          </ul>
 
           <!-- ✏️ EDITE: credenciais (CRP e CRFa) -->
           <ul class="hero-chips" aria-label="Registros profissionais">
             <li>Psicóloga · CRP 05/38142</li>
             <li>Fonoaudióloga · CRFa 1-15495</li>
-            <li>Vila da Penha · RJ</li>
           </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-wa href="#">Agendar horário</a>
+          </div>
         </div>
 
         <!-- ✏️ EDITE: troque este elemento por uma <img> com sua foto -->
@@ -110,14 +147,6 @@
           <div class="hero-blob">
             <span class="hero-initials">AM</span>
             <span class="hero-photo-note">sua foto aqui</span>
-          </div>
-          <div class="hero-card hero-card-a">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5A3.5 3.5 0 0 0 6 7a3.5 3.5 0 0 0-2 6.3A3.5 3.5 0 0 0 7.5 19h2V3.5Z"/><path d="M14.5 3.5A3.5 3.5 0 0 1 18 7a3.5 3.5 0 0 1 2 6.3 3.5 3.5 0 0 1-3.5 5.7h-2V3.5Z"/></svg>
-            Avaliação neuropsicológica
-          </div>
-          <div class="hero-card hero-card-b">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5M4 5v4h4"/><path d="M4 13a8 8 0 0 0 14.6 4.5M20 19v-4h-4"/></svg>
-            Programa REAB
           </div>
         </div>
       </div>
@@ -133,10 +162,10 @@
         </div>
 
         <div class="publico-grid">
-          <!-- ✏️ EDITE: troque o .publico-photo por <img src="espaco-infantil.jpg" alt="Espaço infantil do consultório"> -->
+          <!-- ✏️ EDITE: foto do espaço infantil (assets/img/espaco-infantil.jpeg) -->
           <button class="publico-card reveal" type="button" data-publico="infancia" aria-expanded="false" aria-controls="servicos-infancia">
             <span class="publico-photo tint-blush">
-              <span class="hero-photo-note">foto espaço infantil</span>
+              <img src="assets/img/espaco-infantil.jpeg" alt="Sala de atendimento infantil do consultório, com mesinha, brinquedos e livros" width="1448" height="1086" loading="lazy" decoding="async" />
             </span>
             <span class="publico-body">
               <span class="publico-title">Infância e Adolescência</span>
@@ -145,10 +174,10 @@
             </span>
           </button>
 
-          <!-- ✏️ EDITE: troque o .publico-photo por <img src="espaco-gerontologia.jpg" alt="Espaço de gerontologia do consultório"> -->
+          <!-- ✏️ EDITE: foto do espaço adulto e idoso (assets/img/espaco-adulto.jpeg) -->
           <button class="publico-card reveal" data-delay="1" type="button" data-publico="adulto" aria-expanded="false" aria-controls="servicos-adulto">
             <span class="publico-photo tint-sage">
-              <span class="hero-photo-note">foto espaço gerontologia</span>
+              <img src="assets/img/espaco-adulto.jpeg" alt="Sala de atendimento para adultos e idosos do consultório, com mesa e divã" width="1448" height="1086" loading="lazy" decoding="async" />
             </span>
             <span class="publico-body">
               <span class="publico-title">Adulto e Idoso</span>
@@ -170,7 +199,7 @@
         </div>
 
         <div class="servicos-panel" id="servicos-adulto" data-panel="adulto">
-          <h3 class="servicos-title">Adulto e Gerontologia</h3>
+          <h3 class="servicos-title">Adulto e Envelhecimento</h3>
           <ul class="servicos-list">
             <li><a href="#adulto"><strong>Avaliação neuropsicológica</strong><span>Sinais de alerta e como pode ajudar</span></a></li>
             <li><a href="#reab"><strong>Programa REAB</strong><span>Reabilitação integrada</span></a></li>
@@ -179,15 +208,6 @@
           </ul>
         </div>
 
-        <a class="psico-link reveal" href="#psicoterapia">
-          <span class="card-icon tint-lilac">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c5 0 9 3.6 9 8s-4 8-9 8c-1 0-2-.15-2.9-.4L4 20l1.2-3.2A7.9 7.9 0 0 1 3 11c0-4.4 4-8 9-8Z"/></svg>
-          </span>
-          <span>
-            <strong>Psicoterapia para adultos</strong>
-            <span>Presencial e on-line — um espaço de escuta, acolhimento e reflexão.</span>
-          </span>
-        </a>
       </div>
     </section>
 
@@ -224,82 +244,89 @@
           <p class="section-lead">Quando procurar uma avaliação? Quando há dúvidas sobre…</p>
         </div>
 
-        <div class="cards-grid">
-          <!-- ✏️ EDITE: os 6 grupos de sinais -->
-          <article class="card reveal">
-            <span class="card-num">1</span>
-            <h3 class="card-title">Atenção, memória e organização</h3>
-            <ul class="check-list">
-              <li>Distrai-se facilmente.</li>
-              <li>Esquece instruções e recados.</li>
-              <li>Perde materiais escolares.</li>
-              <li>Não conclui tarefas.</li>
-              <li>Tem dificuldade para organizar a rotina.</li>
-            </ul>
-          </article>
+        <div class="mais">
+          <button class="btn btn-ghost btn-mais" type="button" aria-expanded="false" aria-controls="mais-infancia" data-mais>Ver sinais por área</button>
+          <div class="mais-conteudo" id="mais-infancia">
+            <div class="mais-inner">
+            <div class="cards-grid">
+              <!-- ✏️ EDITE: os 6 grupos de sinais -->
+              <article class="card reveal">
+                <span class="card-num">1</span>
+                <h3 class="card-title">Atenção, memória e organização</h3>
+                <ul class="check-list">
+                  <li>Distrai-se facilmente.</li>
+                  <li>Esquece instruções e recados.</li>
+                  <li>Perde materiais escolares.</li>
+                  <li>Não conclui tarefas.</li>
+                  <li>Tem dificuldade para organizar a rotina.</li>
+                </ul>
+              </article>
 
-          <article class="card reveal" data-delay="1">
-            <span class="card-num">2</span>
-            <h3 class="card-title">Aprendizagem e linguagem</h3>
-            <ul class="check-list">
-              <li>Dificuldade para ler, escrever ou calcular.</li>
-              <li>Dificuldade para compreender textos e instruções.</li>
-              <li>Vocabulário ou comunicação abaixo do esperado para a idade.</li>
-              <li>Dificuldade para acompanhar o conteúdo escolar.</li>
-            </ul>
-          </article>
+              <article class="card reveal" data-delay="1">
+                <span class="card-num">2</span>
+                <h3 class="card-title">Aprendizagem e linguagem</h3>
+                <ul class="check-list">
+                  <li>Dificuldade para ler, escrever ou calcular.</li>
+                  <li>Dificuldade para compreender textos e instruções.</li>
+                  <li>Vocabulário ou comunicação abaixo do esperado para a idade.</li>
+                  <li>Dificuldade para acompanhar o conteúdo escolar.</li>
+                </ul>
+              </article>
 
-          <article class="card reveal" data-delay="2">
-            <span class="card-num">3</span>
-            <h3 class="card-title">Comportamento e autorregulação</h3>
-            <ul class="check-list">
-              <li>Agitação frequente.</li>
-              <li>Impulsividade e dificuldade para esperar.</li>
-              <li>Dificuldade para seguir regras e combinados.</li>
-              <li>Reações intensas diante de frustrações.</li>
-            </ul>
-          </article>
+              <article class="card reveal" data-delay="2">
+                <span class="card-num">3</span>
+                <h3 class="card-title">Comportamento e autorregulação</h3>
+                <ul class="check-list">
+                  <li>Agitação frequente.</li>
+                  <li>Impulsividade e dificuldade para esperar.</li>
+                  <li>Dificuldade para seguir regras e combinados.</li>
+                  <li>Reações intensas diante de frustrações.</li>
+                </ul>
+              </article>
 
-          <article class="card reveal">
-            <span class="card-num">4</span>
-            <h3 class="card-title">Aspectos emocionais</h3>
-            <ul class="check-list">
-              <li>Medos ou preocupações frequentes.</li>
-              <li>Choro recorrente diante de dificuldades.</li>
-              <li>Resistência para ir à escola.</li>
-              <li>Dificuldade para lidar com mudanças na rotina.</li>
-            </ul>
-          </article>
+              <article class="card reveal">
+                <span class="card-num">4</span>
+                <h3 class="card-title">Aspectos emocionais</h3>
+                <ul class="check-list">
+                  <li>Medos ou preocupações frequentes.</li>
+                  <li>Choro recorrente diante de dificuldades.</li>
+                  <li>Resistência para ir à escola.</li>
+                  <li>Dificuldade para lidar com mudanças na rotina.</li>
+                </ul>
+              </article>
 
-          <article class="card reveal" data-delay="1">
-            <span class="card-num">5</span>
-            <h3 class="card-title">Interação social</h3>
-            <ul class="check-list">
-              <li>Dificuldade para fazer ou manter amizades.</li>
-              <li>Dificuldade para compartilhar brincadeiras.</li>
-              <li>Dificuldade para compreender regras sociais.</li>
-              <li>Pouca iniciativa para interagir com outras pessoas.</li>
-            </ul>
-          </article>
+              <article class="card reveal" data-delay="1">
+                <span class="card-num">5</span>
+                <h3 class="card-title">Interação social</h3>
+                <ul class="check-list">
+                  <li>Dificuldade para fazer ou manter amizades.</li>
+                  <li>Dificuldade para compartilhar brincadeiras.</li>
+                  <li>Dificuldade para compreender regras sociais.</li>
+                  <li>Pouca iniciativa para interagir com outras pessoas.</li>
+                </ul>
+              </article>
 
-          <article class="card reveal" data-delay="2">
-            <span class="card-num">6</span>
-            <h3 class="card-title">Desenvolvimento e autonomia</h3>
-            <ul class="check-list">
-              <li>Atraso na aquisição de habilidades esperadas para a idade.</li>
-              <li>Dificuldade para realizar tarefas cotidianas de forma independente.</li>
-              <li>Necessidade frequente de ajuda em atividades já esperadas para sua faixa etária.</li>
-            </ul>
-          </article>
-        </div>
+              <article class="card reveal" data-delay="2">
+                <span class="card-num">6</span>
+                <h3 class="card-title">Desenvolvimento e autonomia</h3>
+                <ul class="check-list">
+                  <li>Atraso na aquisição de habilidades esperadas para a idade.</li>
+                  <li>Dificuldade para realizar tarefas cotidianas de forma independente.</li>
+                  <li>Necessidade frequente de ajuda em atividades já esperadas para sua faixa etária.</li>
+                </ul>
+              </article>
+            </div>
 
-        <div class="nota reveal" id="infancia-orientacao">
-          <p>
-            A avaliação neuropsicológica auxilia na identificação das potencialidades e
-            dificuldades, orientando intervenções junto à família, à escola e aos
-            profissionais envolvidos.
-          </p>
-          <p class="nota-small">Os sinais devem ser considerados conforme a idade, a frequência e o impacto no cotidiano.</p>
+            <div class="nota reveal" id="infancia-orientacao">
+              <p>
+                A avaliação neuropsicológica auxilia na identificação das potencialidades e
+                dificuldades, orientando intervenções junto à família, à escola e aos
+                profissionais envolvidos.
+              </p>
+              <p class="nota-small">Os sinais devem ser considerados conforme a idade, a frequência e o impacto no cotidiano.</p>
+            </div>
+            </div>
+          </div>
         </div>
 
         <div class="cta-box reveal">
@@ -315,85 +342,92 @@
       </div>
     </section>
 
-    <!-- ════════════ ADULTO E GERONTOLOGIA ════════════ -->
+    <!-- ════════════ ADULTO E ENVELHECIMENTO ════════════ -->
     <section class="section" id="adulto">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Adulto e Gerontologia</span>
+          <span class="eyebrow">Adulto e Envelhecimento</span>
           <h2 class="section-title">Avaliação Neuropsicológica no envelhecimento</h2>
+          <!-- ✏️ EDITE: textos da avaliação no envelhecimento -->
+          <p class="section-lead">
+            Envelhecer é um processo natural, e cada pessoa vivencia essa fase de uma
+            maneira. No entanto, algumas mudanças na memória, na atenção, na linguagem ou
+            no comportamento merecem atenção, principalmente quando começam a interferir
+            nas atividades diárias, na autonomia e na convivência familiar.
+          </p>
         </div>
 
-        <div class="split">
-          <div class="split-text reveal">
-            <!-- ✏️ EDITE: textos da avaliação em gerontologia -->
-            <p>
-              Envelhecer é um processo natural, e cada pessoa vivencia essa fase de uma
-              maneira. No entanto, algumas mudanças na memória, na atenção, na linguagem ou
-              no comportamento merecem atenção, principalmente quando começam a interferir
-              nas atividades diárias, na autonomia e na convivência familiar.
-            </p>
-            <p>
-              Nessa fase, a avaliação analisa habilidades como memória, atenção, linguagem e
-              raciocínio, ajudando a compreender mudanças cognitivas e funcionais ao longo
-              do envelhecimento. É importante para investigar possíveis alterações,
-              auxiliando na diferenciação entre o envelhecimento esperado, o Comprometimento
-              Cognitivo Leve (CCL) e quadros demenciais, como as doenças de Alzheimer e a
-              demência frontotemporal, entre outras.
-            </p>
-            <p>
-              Os resultados contribuem para orientar os cuidados e as intervenções,
-              favorecendo a autonomia e a qualidade de vida do idoso e de sua família.
-            </p>
+        <div class="mais">
+          <button class="btn btn-ghost btn-mais" type="button" aria-expanded="false" aria-controls="mais-adulto" data-mais>Ver sinais de alerta e como a avaliação ajuda</button>
+          <div class="mais-conteudo" id="mais-adulto">
+            <div class="mais-inner">
+            <div class="split">
+              <div class="split-text reveal">
+                <p>
+                  Nessa fase, a avaliação analisa habilidades como memória, atenção, linguagem e
+                  raciocínio, ajudando a compreender mudanças cognitivas e funcionais ao longo
+                  do envelhecimento. É importante para investigar possíveis alterações,
+                  auxiliando na diferenciação entre o envelhecimento esperado, o Comprometimento
+                  Cognitivo Leve (CCL) e quadros demenciais, como as doenças de Alzheimer e a
+                  demência frontotemporal, entre outras.
+                </p>
+                <p>
+                  Os resultados contribuem para orientar os cuidados e as intervenções,
+                  favorecendo a autonomia e a qualidade de vida do idoso e de sua família.
+                </p>
+              </div>
+
+              <div class="alerta-card reveal" data-delay="1">
+                <h3 class="card-title">Fique atento aos sinais de alerta</h3>
+                <ul class="check-list">
+                  <li>Esquecer conversas ou acontecimentos recentes com frequência.</li>
+                  <li>Repetir perguntas ou contar a mesma história várias vezes.</li>
+                  <li>Esquecer compromissos, horários ou o uso de medicamentos.</li>
+                  <li>Perder-se em locais conhecidos ou confundir caminhos.</li>
+                  <li>Ter dificuldade para encontrar palavras ou acompanhar conversas.</li>
+                  <li>Apresentar dificuldade para organizar tarefas, fazer compras ou administrar o próprio dinheiro.</li>
+                  <li>Esquecer alimentos no fogo ou ter dificuldade para preparar refeições que antes fazia com facilidade.</li>
+                  <li>Precisar de ajuda para organizar a rotina ou realizar atividades que antes fazia sozinho.</li>
+                  <li>Apresentar mudanças incomuns de comportamento, humor ou personalidade.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cards-grid cards-grid-2">
+              <article class="card reveal">
+                <span class="card-icon tint-blush">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19v-7.5Z"/><path d="M9.5 20.5v-5h5v5"/></svg>
+                </span>
+                <h3 class="card-title">Como essas mudanças podem afetar o dia a dia?</h3>
+                <p class="card-text">
+                  Essas dificuldades podem comprometer a organização da rotina, o uso correto de
+                  medicamentos, a segurança dentro de casa, a realização de tarefas domésticas, a
+                  administração das finanças e a participação em atividades sociais. Em alguns
+                  casos, a pessoa passa a depender mais da família para atividades que antes
+                  realizava com independência.
+                </p>
+                <p class="card-text card-text-note">
+                  Esses sinais não significam, necessariamente, a presença de uma doença, mas
+                  merecem investigação quando são persistentes, se intensificam ou prejudicam a
+                  vida cotidiana.
+                </p>
+              </article>
+
+              <article class="card reveal" data-delay="1">
+                <span class="card-icon tint-sage">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/></svg>
+                </span>
+                <h3 class="card-title">Como a avaliação neuropsicológica pode ajudar?</h3>
+                <p class="card-text">
+                  A avaliação permite compreender o funcionamento da memória, da atenção, da
+                  linguagem, do raciocínio e de outras habilidades cognitivas. Também ajuda a
+                  identificar capacidades preservadas, compreender as dificuldades e orientar a
+                  família sobre estratégias de cuidado e possíveis intervenções.
+                </p>
+              </article>
+            </div>
+            </div>
           </div>
-
-          <div class="alerta-card reveal" data-delay="1">
-            <h3 class="card-title">Fique atento aos sinais de alerta</h3>
-            <ul class="check-list">
-              <li>Esquecer conversas ou acontecimentos recentes com frequência.</li>
-              <li>Repetir perguntas ou contar a mesma história várias vezes.</li>
-              <li>Esquecer compromissos, horários ou o uso de medicamentos.</li>
-              <li>Perder-se em locais conhecidos ou confundir caminhos.</li>
-              <li>Ter dificuldade para encontrar palavras ou acompanhar conversas.</li>
-              <li>Apresentar dificuldade para organizar tarefas, fazer compras ou administrar o próprio dinheiro.</li>
-              <li>Esquecer alimentos no fogo ou ter dificuldade para preparar refeições que antes fazia com facilidade.</li>
-              <li>Precisar de ajuda para organizar a rotina ou realizar atividades que antes fazia sozinho.</li>
-              <li>Apresentar mudanças incomuns de comportamento, humor ou personalidade.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="cards-grid cards-grid-2">
-          <article class="card reveal">
-            <span class="card-icon tint-blush">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19v-7.5Z"/><path d="M9.5 20.5v-5h5v5"/></svg>
-            </span>
-            <h3 class="card-title">Como essas mudanças podem afetar o dia a dia?</h3>
-            <p class="card-text">
-              Essas dificuldades podem comprometer a organização da rotina, o uso correto de
-              medicamentos, a segurança dentro de casa, a realização de tarefas domésticas, a
-              administração das finanças e a participação em atividades sociais. Em alguns
-              casos, a pessoa passa a depender mais da família para atividades que antes
-              realizava com independência.
-            </p>
-            <p class="card-text card-text-note">
-              Esses sinais não significam, necessariamente, a presença de uma doença, mas
-              merecem investigação quando são persistentes, se intensificam ou prejudicam a
-              vida cotidiana.
-            </p>
-          </article>
-
-          <article class="card reveal" data-delay="1">
-            <span class="card-icon tint-sage">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/></svg>
-            </span>
-            <h3 class="card-title">Como a avaliação neuropsicológica pode ajudar?</h3>
-            <p class="card-text">
-              A avaliação permite compreender o funcionamento da memória, da atenção, da
-              linguagem, do raciocínio e de outras habilidades cognitivas. Também ajuda a
-              identificar capacidades preservadas, compreender as dificuldades e orientar a
-              família sobre estratégias de cuidado e possíveis intervenções.
-            </p>
-          </article>
         </div>
 
         <div class="cta-box reveal">
@@ -439,118 +473,125 @@
           <p class="reab-quote">Programa REAB — conhecimento integrado para um cuidado individualizado.</p>
         </div>
 
-        <div class="section-head section-head-sm reveal">
-          <h3 class="section-subtitle">Como funciona o Programa REAB?</h3>
-          <p class="section-lead">
-            O programa é direcionado à reabilitação, ao desenvolvimento de estratégias
-            compensatórias e à ampliação da funcionalidade e da autonomia. O acompanhamento
-            pode incluir:
-          </p>
-        </div>
+        <div class="mais">
+          <button class="btn btn-ghost btn-mais" type="button" aria-expanded="false" aria-controls="mais-reab" data-mais>Como funciona o Programa REAB</button>
+          <div class="mais-conteudo" id="mais-reab">
+            <div class="mais-inner">
+            <div class="section-head section-head-sm reveal">
+              <h3 class="section-subtitle">Como funciona o Programa REAB?</h3>
+              <p class="section-lead">
+                O programa é direcionado à reabilitação, ao desenvolvimento de estratégias
+                compensatórias e à ampliação da funcionalidade e da autonomia. O acompanhamento
+                pode incluir:
+              </p>
+            </div>
 
-        <ol class="reab-steps">
-          <!-- ✏️ EDITE: etapas do acompanhamento -->
-          <li class="reab-step reveal">
-            <span class="step-num">1</span>
-            <div>
-              <h4>Planejamento individualizado</h4>
-              <p>Definição de objetivos e estratégias terapêuticas de acordo com as necessidades identificadas.</p>
-            </div>
-          </li>
-          <li class="reab-step reveal" data-delay="1">
-            <span class="step-num">2</span>
-            <div>
-              <h4>Reabilitação cognitiva e funcional</h4>
-              <p>Intervenções voltadas à atenção, memória, linguagem, funções executivas e habilidades necessárias à rotina, conforme as demandas de cada pessoa.</p>
-            </div>
-          </li>
-          <li class="reab-step reveal" data-delay="2">
-            <span class="step-num">3</span>
-            <div>
-              <h4>Intervenções interdisciplinares</h4>
-              <p>Integração de conhecimentos da Neuropsicologia, Psicologia e Fonoaudiologia, conforme os objetivos do acompanhamento.</p>
-            </div>
-          </li>
-          <li class="reab-step reveal">
-            <span class="step-num">4</span>
-            <div>
-              <h4>Orientação familiar</h4>
-              <p>Estratégias para favorecer a comunicação, a organização da rotina, o manejo de dificuldades e a continuidade dos cuidados no ambiente familiar.</p>
-            </div>
-          </li>
-          <li class="reab-step reveal" data-delay="1">
-            <span class="step-num">5</span>
-            <div>
-              <h4>Acompanhamento da evolução</h4>
-              <p>Monitoramento dos objetivos terapêuticos e devolutiva documentada semestralmente, conforme a organização do programa.</p>
-            </div>
-          </li>
-        </ol>
+            <ol class="reab-steps">
+              <!-- ✏️ EDITE: etapas do acompanhamento -->
+              <li class="reab-step reveal">
+                <span class="step-num">1</span>
+                <div>
+                  <h4>Planejamento individualizado</h4>
+                  <p>Definição de objetivos e estratégias terapêuticas de acordo com as necessidades identificadas.</p>
+                </div>
+              </li>
+              <li class="reab-step reveal" data-delay="1">
+                <span class="step-num">2</span>
+                <div>
+                  <h4>Reabilitação cognitiva e funcional</h4>
+                  <p>Intervenções voltadas à atenção, memória, linguagem, funções executivas e habilidades necessárias à rotina, conforme as demandas de cada pessoa.</p>
+                </div>
+              </li>
+              <li class="reab-step reveal" data-delay="2">
+                <span class="step-num">3</span>
+                <div>
+                  <h4>Intervenções interdisciplinares</h4>
+                  <p>Integração de conhecimentos da Neuropsicologia, Psicologia e Fonoaudiologia, conforme os objetivos do acompanhamento.</p>
+                </div>
+              </li>
+              <li class="reab-step reveal">
+                <span class="step-num">4</span>
+                <div>
+                  <h4>Orientação familiar</h4>
+                  <p>Estratégias para favorecer a comunicação, a organização da rotina, o manejo de dificuldades e a continuidade dos cuidados no ambiente familiar.</p>
+                </div>
+              </li>
+              <li class="reab-step reveal" data-delay="1">
+                <span class="step-num">5</span>
+                <div>
+                  <h4>Acompanhamento da evolução</h4>
+                  <p>Monitoramento dos objetivos terapêuticos e devolutiva documentada semestralmente, conforme a organização do programa.</p>
+                </div>
+              </li>
+            </ol>
 
-        <div class="cards-grid cards-grid-2 reab-sub">
-          <!-- Fonoaudiologia neurológica -->
-          <article class="card reveal" id="fono">
-            <span class="card-icon tint-blush">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c5 0 9 3.6 9 8s-4 8-9 8c-1 0-2-.15-2.9-.4L4 20l1.2-3.2A7.9 7.9 0 0 1 3 11c0-4.4 4-8 9-8Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
-            </span>
-            <span class="card-tag">Integra o Programa REAB</span>
-            <h3 class="card-title">Fonoaudiologia Neurológica e Funcional</h3>
-            <p class="card-text card-text-strong">Atendimento presencial para adultos e pessoas idosas.</p>
-            <p class="card-text">
-              A Fonoaudiologia Neurológica integra o Programa REAB nos casos em que há
-              necessidade de avaliação e intervenção nas habilidades de comunicação,
-              linguagem, fala e deglutição relacionadas a condições neurológicas.
-            </p>
-            <p class="card-text card-text-label">O acompanhamento pode ser indicado para pessoas com:</p>
-            <ul class="check-list">
-              <li>Histórico de acidente vascular cerebral (AVC) e afasia.</li>
-              <li>Apraxia de fala e disartria.</li>
-              <li>Doença de Parkinson.</li>
-              <li>Doença de Alzheimer e outras condições neurodegenerativas.</li>
-              <li>Alterações de comunicação associadas a condições neurológicas.</li>
-              <li>Disfagia, com dificuldades para engolir alimentos, líquidos ou saliva.</li>
-            </ul>
-            <p class="card-text card-text-note">
-              As intervenções são planejadas de acordo com as necessidades individuais, as
-              habilidades preservadas e os objetivos funcionais, buscando favorecer a
-              comunicação, a participação nas atividades cotidianas e, nos casos de disfagia,
-              a segurança e a funcionalidade da deglutição.
-            </p>
-          </article>
+            <div class="cards-grid cards-grid-2 reab-sub">
+              <!-- Fonoaudiologia neurológica -->
+              <article class="card reveal" id="fono">
+                <span class="card-icon tint-blush">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c5 0 9 3.6 9 8s-4 8-9 8c-1 0-2-.15-2.9-.4L4 20l1.2-3.2A7.9 7.9 0 0 1 3 11c0-4.4 4-8 9-8Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+                </span>
+                <span class="card-tag">Integra o Programa REAB</span>
+                <h3 class="card-title">Fonoaudiologia Neurológica e Funcional</h3>
+                <p class="card-text card-text-strong">Atendimento presencial para adultos e pessoas idosas.</p>
+                <p class="card-text">
+                  A Fonoaudiologia Neurológica integra o Programa REAB nos casos em que há
+                  necessidade de avaliação e intervenção nas habilidades de comunicação,
+                  linguagem, fala e deglutição relacionadas a condições neurológicas.
+                </p>
+                <p class="card-text card-text-label">O acompanhamento pode ser indicado para pessoas com:</p>
+                <ul class="check-list">
+                  <li>Histórico de acidente vascular cerebral (AVC) e afasia.</li>
+                  <li>Apraxia de fala e disartria.</li>
+                  <li>Doença de Parkinson.</li>
+                  <li>Doença de Alzheimer e outras condições neurodegenerativas.</li>
+                  <li>Alterações de comunicação associadas a condições neurológicas.</li>
+                  <li>Disfagia, com dificuldades para engolir alimentos, líquidos ou saliva.</li>
+                </ul>
+                <p class="card-text card-text-note">
+                  As intervenções são planejadas de acordo com as necessidades individuais, as
+                  habilidades preservadas e os objetivos funcionais, buscando favorecer a
+                  comunicação, a participação nas atividades cotidianas e, nos casos de disfagia,
+                  a segurança e a funcionalidade da deglutição.
+                </p>
+              </article>
 
-          <!-- Orientação a familiares e cuidadores -->
-          <article class="card reveal" data-delay="1" id="cuidadores">
-            <span class="card-icon tint-sage">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.4"/><path d="M3.2 19.5c.9-3 3.1-4.6 5.8-4.6s4.9 1.6 5.8 4.6"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6"/><path d="M17.5 15.2c2 .6 3.3 2.1 3.8 4.3"/></svg>
-            </span>
-            <span class="card-tag">Integra o Programa REAB</span>
-            <h3 class="card-title">Orientação a familiares e cuidadores</h3>
-            <p class="card-text card-text-strong">O cuidado também se constrói no dia a dia.</p>
-            <p class="card-text">
-              A família e os cuidadores podem ter um papel importante na continuidade das
-              estratégias terapêuticas. Por isso, o Programa REAB prevê orientações
-              direcionadas às necessidades de cada paciente e à realidade de seu ambiente
-              familiar.
-            </p>
-            <p class="card-text card-text-label">As orientações podem abordar:</p>
-            <ul class="check-list">
-              <li>Comunicação e interação.</li>
-              <li>Manejo de comportamentos e situações desafiadoras.</li>
-              <li>Organização da rotina e apoio à realização de atividades diárias.</li>
-              <li>Estratégias para estimular habilidades cognitivas e funcionais.</li>
-              <li>Cuidados cotidianos e promoção da autonomia.</li>
-              <li>Aplicação das estratégias terapêuticas no ambiente familiar.</li>
-            </ul>
-            <p class="card-text card-text-note">
-              O objetivo é oferecer recursos práticos para que familiares e cuidadores
-              compreendam melhor as necessidades da pessoa acompanhada e participem do
-              processo de reabilitação de forma orientada.
-            </p>
-          </article>
+              <!-- Orientação a familiares e cuidadores -->
+              <article class="card reveal" data-delay="1" id="cuidadores">
+                <span class="card-icon tint-sage">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3.4"/><path d="M3.2 19.5c.9-3 3.1-4.6 5.8-4.6s4.9 1.6 5.8 4.6"/><path d="M15.5 5.6a3.2 3.2 0 0 1 0 6"/><path d="M17.5 15.2c2 .6 3.3 2.1 3.8 4.3"/></svg>
+                </span>
+                <span class="card-tag">Integra o Programa REAB</span>
+                <h3 class="card-title">Orientação a familiares e cuidadores</h3>
+                <p class="card-text card-text-strong">O cuidado também se constrói no dia a dia.</p>
+                <p class="card-text">
+                  A família e os cuidadores podem ter um papel importante na continuidade das
+                  estratégias terapêuticas. Por isso, o Programa REAB prevê orientações
+                  direcionadas às necessidades de cada paciente e à realidade de seu ambiente
+                  familiar.
+                </p>
+                <p class="card-text card-text-label">As orientações podem abordar:</p>
+                <ul class="check-list">
+                  <li>Comunicação e interação.</li>
+                  <li>Manejo de comportamentos e situações desafiadoras.</li>
+                  <li>Organização da rotina e apoio à realização de atividades diárias.</li>
+                  <li>Estratégias para estimular habilidades cognitivas e funcionais.</li>
+                  <li>Cuidados cotidianos e promoção da autonomia.</li>
+                  <li>Aplicação das estratégias terapêuticas no ambiente familiar.</li>
+                </ul>
+                <p class="card-text card-text-note">
+                  O objetivo é oferecer recursos práticos para que familiares e cuidadores
+                  compreendam melhor as necessidades da pessoa acompanhada e participem do
+                  processo de reabilitação de forma orientada.
+                </p>
+              </article>
+            </div>
+            </div>
+          </div>
         </div>
 
         <div class="cta-box reveal">
-          <h3 class="cta-title">Para quem é indicado?</h3>
+          <h3 class="cta-title">Para quem é direcionado o Programa REAB?</h3>
           <p>
             O Programa REAB é direcionado a pessoas que apresentam alterações cognitivas,
             comunicativas, comportamentais ou funcionais e que podem se beneficiar de um
@@ -616,46 +657,17 @@
       </div>
     </section>
 
-    <!-- ════════════ UM OLHAR INTEGRADO ════════════ -->
-    <section class="section section-alt" id="olhar-integrado">
-      <div class="container container-narrow">
-        <div class="section-head reveal">
-          <span class="eyebrow">Um olhar integrado para cada pessoa</span>
-          <h2 class="section-title">Mais do que identificar dificuldades, reconhecer potencialidades</h2>
-        </div>
-        <div class="olhar-text reveal">
-          <!-- ✏️ EDITE: texto "Um olhar integrado" -->
-          <p>
-            O funcionamento humano envolve a interação de diferentes sistemas cognitivos,
-            neurológicos, psicológicos, comportamentais e socioemocionais. Compreender essa
-            integração permite ampliar o olhar sobre as dificuldades e reconhecer habilidades
-            que podem favorecer o desenvolvimento, a adaptação e a funcionalidade.
-          </p>
-          <p>
-            Minha proposta é reunir conhecimentos da Neuropsicologia, Psicologia e
-            Fonoaudiologia para compreender cada pessoa em sua singularidade, planejar
-            intervenções coerentes com suas necessidades e construir caminhos que favoreçam
-            maior participação, autonomia e qualidade de vida.
-          </p>
-          <p>
-            Mais do que identificar dificuldades, é reconhecer potencialidades e desenvolver
-            recursos para lidar com os desafios presentes em cada fase da vida.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- ════════════ SOBRE ════════════ -->
     <section class="section section-white" id="sobre">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Sobre Alyne Marciano</span>
-          <h2 class="section-title">Especialista em Neuropsicologia</h2>
+          <h2 class="section-title">Psicóloga e Fonoaudióloga especialista em Neuropsicologia</h2>
           <p class="section-lead">Psicóloga CRP 05/38142 · Fonoaudióloga CRFa 1-15495</p>
         </div>
 
         <div class="sobre-grid">
-          <!-- ✏️ EDITE: troque por sua foto (ex.: <img src="foto.jpg" alt="Alyne Marciano">) -->
+          <!-- ✏️ EDITE: troque por sua foto (ex.: <img src="assets/img/foto.jpg" alt="Alyne Marciano">) -->
           <div class="sobre-figure reveal">
             <div class="sobre-photo">
               <span class="hero-initials">AM</span>
@@ -668,17 +680,12 @@
             <p>
               Sou Psicóloga e Fonoaudióloga, especialista em Neuropsicologia, com formação e
               atuação interdisciplinar voltadas à compreensão do funcionamento cognitivo,
-              psicológico, comportamental, emocional e comunicativo.
+              psicológico, comportamental e emocional.
             </p>
             <p>
               A formação continuada faz parte do meu compromisso profissional de aprofundar
               conhecimentos e integrar diferentes perspectivas que contribuem para a
               avaliação, o planejamento terapêutico e a reabilitação.
-            </p>
-            <p>
-              Acredito que compreender as conexões entre os aspectos neurológicos, cognitivos,
-              emocionais e funcionais amplia as possibilidades de intervenção e favorece um
-              cuidado mais individualizado.
             </p>
 
             <!-- ✏️ EDITE: formação e credenciais -->
@@ -710,7 +717,7 @@
           </details>
 
           <details class="faq-item">
-            <summary>Os sinais de alerta significam que existe uma doença?</summary>
+            <summary>Os sinais de alerta significam que existe um transtorno?</summary>
             <div class="faq-a"><p>Não necessariamente. Os sinais devem ser considerados conforme a idade, a frequência e o impacto no cotidiano, e merecem investigação quando são persistentes, se intensificam ou prejudicam a vida diária.</p></div>
           </details>
 
@@ -726,7 +733,7 @@
 
           <details class="faq-item">
             <summary>Onde fica o consultório?</summary>
-            <div class="faq-a"><p>O consultório fica na Vila da Penha, no Rio de Janeiro. Entre em contato pelo WhatsApp para receber o endereço completo e agendar um horário.</p></div>
+            <div class="faq-a"><p>O consultório fica na Avenida Padre Roser, 42 (Punto Offices), Vila da Penha, Rio de Janeiro. Os horários são combinados pelo WhatsApp.</p></div>
           </details>
         </div>
       </div>
@@ -754,23 +761,33 @@
               </span>
             </a>
 
-            <a class="contato-item" href="mailto:contato@alynemarciano.com.br">
+            <a class="contato-item" href="mailto:psicologiaefonoaudiologia@gmail.com">
               <span class="contato-icon tint-lilac">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="3"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg>
               </span>
               <span>
                 <span class="contato-label">E-mail</span>
-                <span class="contato-value">contato@alynemarciano.com.br</span>
+                <span class="contato-value">psicologiaefonoaudiologia@gmail.com</span>
               </span>
             </a>
 
-            <a class="contato-item" href="https://instagram.com/" target="_blank" rel="noopener">
+            <a class="contato-item" href="https://www.instagram.com/alyne_marciano/" target="_blank" rel="noopener">
               <span class="contato-icon tint-blush">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" stroke="none"/></svg>
               </span>
               <span>
                 <span class="contato-label">Instagram</span>
-                <span class="contato-value">@psialine.marciano</span>
+                <span class="contato-value">@alyne_marciano</span>
+              </span>
+            </a>
+
+            <a class="contato-item" href="https://www.tiktok.com/@alynegouveia7" target="_blank" rel="noopener">
+              <span class="contato-icon tint-sage">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.8 2.2 4.6 5 5"/></svg>
+              </span>
+              <span>
+                <span class="contato-label">TikTok</span>
+                <span class="contato-value">@alynegouveia7</span>
               </span>
             </a>
 
@@ -780,7 +797,7 @@
               </span>
               <span>
                 <span class="contato-label">Consultório</span>
-                <span class="contato-value">Vila da Penha — Rio de Janeiro</span>
+                <span class="contato-value">Av. Padre Roser, 42 (Punto Offices) — Vila da Penha, Rio de Janeiro</span>
               </span>
             </div>
 
@@ -790,12 +807,12 @@
               </span>
               <span>
                 <span class="contato-label">Horários</span>
-                <span class="contato-value">Seg. a Sex., das 9h às 19h</span>
+                <span class="contato-value">A combinar</span>
               </span>
             </div>
           </div>
 
-          <!-- ✏️ EDITE: o formulário envia a mensagem para o WhatsApp configurado no script.js -->
+          <!-- ✏️ EDITE: o formulário envia a mensagem para o WhatsApp configurado em assets/js/script.js -->
           <form class="form-card reveal" id="form-contato" novalidate>
             <div class="field">
               <label for="f-nome">Seu nome</label>
@@ -848,7 +865,7 @@
         <nav class="footer-links" aria-label="Links do site">
           <h3 class="footer-title">Navegação</h3>
           <a href="#infancia">Infância e Adolescência</a>
-          <a href="#adulto">Adulto e Gerontologia</a>
+          <a href="#adulto">Adulto e Envelhecimento</a>
           <a href="#reab">Programa REAB</a>
           <a href="#psicoterapia">Psicoterapia</a>
           <a href="#sobre">Sobre Alyne</a>
@@ -858,10 +875,11 @@
         <div class="footer-links">
           <h3 class="footer-title">Contato</h3>
           <!-- ✏️ EDITE: e-mail e Instagram no rodapé -->
-          <a href="mailto:contato@alynemarciano.com.br">contato@alynemarciano.com.br</a>
-          <a href="https://instagram.com/" target="_blank" rel="noopener">@psialine.marciano</a>
+          <a href="mailto:psicologiaefonoaudiologia@gmail.com">psicologiaefonoaudiologia@gmail.com</a>
+          <a href="https://www.instagram.com/alyne_marciano/" target="_blank" rel="noopener">@alyne_marciano</a>
           <a data-wa href="#">WhatsApp</a>
-          <span class="footer-place">Vila da Penha — Rio de Janeiro</span>
+          <a href="https://www.tiktok.com/@alynegouveia7" target="_blank" rel="noopener">TikTok @alynegouveia7</a>
+          <span class="footer-place">Av. Padre Roser, 42 — Vila da Penha, Rio de Janeiro</span>
         </div>
       </div>
 
