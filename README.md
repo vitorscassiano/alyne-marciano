@@ -31,11 +31,10 @@ Procure pelos comentários `✏️ EDITE`. Estrutura das seções:
 - **Conheça os atendimentos** — cards por público (Infância e Adolescência /
   Adulto e Idoso); ao clicar, exibem os serviços de cada público
 - **O que é Avaliação Neuropsicológica**
-- **Infância e Adolescência** — 6 grupos de sinais (recolhidos no botão "Ver sinais por área") + chamada para agendar
+- **Infância e Adolescência** — 6 grupos de sinais (recolhidos no botão "Ver sinais por área")
 - **Adulto e Envelhecimento** — introdução; sinais de alerta e impacto no dia a dia ficam recolhidos
 - **Programa REAB** — como funciona, Fonoaudiologia neurológica,
-  orientação a familiares e cuidadores (recolhidos no botão "Como funciona"),
-  para quem é direcionado
+  orientação a familiares e cuidadores (recolhidos no botão "Como funciona")
 - **Psicoterapia** — infantil (presencial) e adultos (presencial e on-line)
 - **Sobre Alyne**
 - **FAQ** e **Contato** (o formulário inclui o atendimento de interesse)
