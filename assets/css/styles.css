@@ -102,7 +102,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section-white  { background: var(--c-white); }
 .section-blush  { background: var(--c-blush-soft); }
 
-section[id] { scroll-margin-top: 88px; }
+section[id], .mais [id] { scroll-margin-top: 88px; }
 
 .icon { width: 1.35em; height: 1.35em; flex: none; }
 
@@ -387,14 +387,31 @@ section[id] { scroll-margin-top: 88px; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hero-servicos { display: grid; gap: 0.5rem; margin-top: 1.4rem; }
+.hero-servicos li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  color: var(--c-ink);
+}
+.hero-servicos li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--c-sage-deep);
 }
 
 .hero-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-top: 2.25rem;
+  margin-top: 1.75rem;
 }
 .hero-chips li {
   display: inline-flex;
@@ -444,25 +461,6 @@ section[id] { scroll-margin-top: 88px; }
   text-transform: uppercase;
   color: var(--c-ink-soft);
 }
-
-.hero-card {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  background: var(--c-white);
-  border: 1px solid var(--c-line);
-  border-radius: var(--radius-pill);
-  padding: 0.6rem 1.05rem;
-  font-size: 0.82rem;
-  font-weight: 800;
-  color: var(--c-ink);
-  box-shadow: var(--shadow);
-}
-.hero-card .icon { color: var(--c-sage-deep); }
-
-.hero-card-a { top: 14%; left: -14px; }
-.hero-card-b { bottom: 12%; right: -8px; }
 
 /* ══════════════════ SOBRE ══════════════════ */
 .sobre-grid {
@@ -625,23 +623,6 @@ section[id] { scroll-margin-top: 88px; }
 .servicos-list strong { font-weight: 800; }
 .servicos-list span { font-size: 0.9rem; color: var(--c-ink-soft); }
 
-.psico-link {
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  max-width: 760px;
-  margin: 2rem auto 0;
-  padding: 1.25rem 1.5rem;
-  background: var(--c-white);
-  border: 1px dashed var(--c-lilac);
-  border-radius: var(--radius);
-  transition: background 0.2s ease;
-}
-.psico-link:hover { background: var(--c-lilac-soft); }
-.psico-link .card-icon { margin: 0; flex: none; }
-.psico-link strong { display: block; font-weight: 800; }
-.psico-link span span { color: var(--c-ink-soft); font-size: 0.95rem; }
-
 /* ══════════════════ DEFINIÇÃO ══════════════════ */
 .definicao {
   display: grid;
@@ -737,7 +718,7 @@ section[id] { scroll-margin-top: 88px; }
 .cta-box p + p { margin-top: 0.8rem; }
 .cta-box .btn { margin-top: 1.5rem; }
 
-/* Adulto e Gerontologia */
+/* Adulto e Envelhecimento */
 .split {
   display: grid;
   gap: 2rem;
@@ -807,17 +788,6 @@ section[id] { scroll-margin-top: 88px; }
 .reab-sub { margin-top: 3rem; }
 .reab-sub .card:hover, .cards-grid-2 .card:hover { transform: none; }
 
-/* Um olhar integrado */
-.olhar-text { text-align: center; }
-.olhar-text p { color: var(--c-ink-soft); font-size: 1.05rem; }
-.olhar-text p + p { margin-top: 1.1rem; }
-.olhar-text p:last-child {
-  font-family: var(--font-title);
-  font-style: italic;
-  font-size: 1.2rem;
-  color: var(--c-sage-deep);
-}
-
 .sobre-quote {
   margin-top: 1.75rem;
   padding-left: 1.1rem;
@@ -828,7 +798,34 @@ section[id] { scroll-margin-top: 88px; }
   color: var(--c-ink) !important;
 }
 
-.lead-sub { margin-top: 0.9rem; font-size: 1rem; }
+/* ══════════════════ SAIBA MAIS (conteúdo recolhível) ══════════════════ */
+/* Mesmo truque do FAQ: a altura transiciona entre 0fr e 1fr. Sem
+   JavaScript o conteúdo fica visível e o botão some. */
+.mais { display: grid; justify-items: center; }
+.btn-mais { display: none; gap: 0.6rem; }
+.btn-mais::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.25s ease;
+}
+.btn-mais[aria-expanded="true"]::after { transform: rotate(225deg) translate(-2px, 0); }
+
+.mais-conteudo {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mais-inner { overflow: hidden; min-height: 0; padding-top: 2rem; }
+
+.mais.js .btn-mais { display: inline-flex; }
+.mais.js .mais-conteudo { grid-template-rows: 0fr; }
+.mais.js.expanded .mais-conteudo { grid-template-rows: 1fr; }
+.mais.js.expanded.aberto .mais-inner { overflow: visible; }
 
 /* ══════════════════ FAQ ══════════════════ */
 .faq-list { display: grid; gap: 0.8rem; }

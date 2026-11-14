@@ -4,14 +4,22 @@ Template profissional de site vertical (one-page) com cores pastéis,
 100% responsivo, feito em HTML + CSS + JavaScript puros — sem build,
 sem dependências. Basta abrir o `index.html` no navegador.
 
-## Arquivos
+## Estrutura
 
-| Arquivo       | O que faz                                            |
-| ------------- | ---------------------------------------------------- |
-| `index.html`  | Todo o conteúdo e textos do site                     |
-| `styles.css`  | Cores, fontes e estilos (paleta no topo do arquivo)   |
-| `script.js`   | Menu, animações, formulário → WhatsApp               |
-| `README.md`   | Este guia                                            |
+```
+.
+├── index.html            # todo o conteúdo e textos do site
+├── robots.txt            # SEO — regras para buscadores
+├── sitemap.xml           # SEO — mapa do site para o Google
+├── assets/
+│   ├── css/styles.css    # cores, fontes e estilos (paleta no topo)
+│   ├── js/script.js      # menu, animações, "Saiba mais", formulário → WhatsApp
+│   └── img/              # fotos do site
+└── docs/                 # materiais de referência (textos enviados pela Alyne)
+```
+
+`index.html`, `robots.txt` e `sitemap.xml` precisam ficar na raiz para o
+site e os buscadores os encontrarem.
 
 ## Como editar
 
@@ -19,19 +27,26 @@ sem dependências. Basta abrir o `index.html` no navegador.
 
 Procure pelos comentários `✏️ EDITE`. Estrutura das seções:
 
-- **Início** — boas-vindas, apresentação e registros (CRP / CRFa)
+- **Início** — apresentação, atendimentos em destaque, registros (CRP / CRFa) e botão "Agendar horário"
 - **Conheça os atendimentos** — cards por público (Infância e Adolescência /
   Adulto e Idoso); ao clicar, exibem os serviços de cada público
 - **O que é Avaliação Neuropsicológica**
-- **Infância e Adolescência** — 6 grupos de sinais + chamada para agendar
-- **Adulto e Gerontologia** — sinais de alerta, impacto no dia a dia
+- **Infância e Adolescência** — 6 grupos de sinais (recolhidos no botão "Ver sinais por área") + chamada para agendar
+- **Adulto e Envelhecimento** — introdução; sinais de alerta e impacto no dia a dia ficam recolhidos
 - **Programa REAB** — como funciona, Fonoaudiologia neurológica,
-  orientação a familiares e cuidadores, para quem é indicado
+  orientação a familiares e cuidadores (recolhidos no botão "Como funciona"),
+  para quem é direcionado
 - **Psicoterapia** — infantil (presencial) e adultos (presencial e on-line)
-- **Um olhar integrado** e **Sobre Alyne**
+- **Sobre Alyne**
 - **FAQ** e **Contato** (o formulário inclui o atendimento de interesse)
 
-### Número do WhatsApp (`script.js`, primeira linha)
+### Blocos "Saiba mais"
+
+Conteúdos longos ficam dentro de `<div class="mais">`: o botão
+`.btn-mais` abre e fecha o trecho `.mais-conteudo`. Para mostrar algo
+sempre aberto, basta movê-lo para fora desse bloco.
+
+### Número do WhatsApp (`assets/js/script.js`, primeira linha)
 
 ```js
 const WHATSAPP = "5521999999999" // 55 + DDD + número
@@ -40,7 +55,7 @@ const WHATSAPP = "5521999999999" // 55 + DDD + número
 Todos os botões ("Agendar conversa", botão flutuante e o formulário)
 usam esse número automaticamente.
 
-### Cores (`styles.css`, bloco `:root` no topo)
+### Cores (`assets/css/styles.css`, bloco `:root` no topo)
 
 Troque os valores das variáveis `--c-*` para mudar a paleta do site
 inteiro de uma vez (fundo, verde sálvia, lilás, rosé…).
@@ -52,11 +67,12 @@ texto "sua foto aqui". Para trocar, substitua o elemento
 `.hero-blob` (seção Início) e `.sobre-photo` (seção Sobre) por:
 
 ```html
-<img src="sua-foto.jpg" alt="Alyne Marciano" />
+<img src="assets/img/sua-foto.jpg" alt="Alyne Marciano" />
 ```
 
-Os cards de público têm áreas `.publico-photo` para as fotos do
-espaço infantil e do espaço de gerontologia — coloque uma `<img>` dentro.
+Os cards de público usam `assets/img/espaco-infantil.jpeg` e
+`assets/img/espaco-adulto.jpeg`. Para trocar, substitua os arquivos
+mantendo o mesmo nome (proporção ideal 4:3 ou 16:9).
 
 ### Registros profissionais
 

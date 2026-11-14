@@ -90,6 +90,49 @@ const MENSAGEM_PADRAO =
     })
   })
 
+  /* "Saiba mais": seções longas ficam recolhidas atrás de um botão.
+     Ao abrir, a altura transiciona via grid-template-rows (0fr ↔ 1fr);
+     depois da animação o overflow é liberado para as sombras dos cards. */
+  const mais = $$(".mais")
+  const abrirMais = (bloco, aberto) => {
+    const botao = $("[data-mais]", bloco)
+    const conteudo = $(".mais-conteudo", bloco)
+    botao.setAttribute("aria-expanded", String(aberto))
+    botao.textContent = aberto ? "Mostrar menos" : botao.dataset.label
+    bloco.classList.remove("aberto")
+    bloco.classList.toggle("expanded", aberto)
+    if (aberto) {
+      const onEnd = (e) => {
+        if (e.target !== conteudo) return
+        conteudo.removeEventListener("transitionend", onEnd)
+        if (bloco.classList.contains("expanded")) bloco.classList.add("aberto")
+      }
+      conteudo.addEventListener("transitionend", onEnd)
+    }
+  }
+
+  mais.forEach((bloco) => {
+    bloco.classList.add("js")
+    const botao = $("[data-mais]", bloco)
+    botao.dataset.label = botao.textContent
+    botao.addEventListener("click", () =>
+      abrirMais(bloco, botao.getAttribute("aria-expanded") !== "true"),
+    )
+  })
+
+  /* Links para um trecho recolhido (ex.: "#fono") abrem o bloco antes de rolar */
+  const revelarAlvo = (hash) => {
+    const alvo = hash.length > 1 && document.getElementById(hash.slice(1))
+    const bloco = alvo && alvo.closest(".mais")
+    if (!bloco || bloco.classList.contains("expanded")) return
+    abrirMais(bloco, true)
+    setTimeout(() => alvo.scrollIntoView({ behavior: "smooth", block: "start" }), 460)
+  }
+  $$('a[href^="#"]').forEach((a) =>
+    a.addEventListener("click", () => revelarAlvo(a.getAttribute("href"))),
+  )
+  revelarAlvo(location.hash)
+
   /* Acordeão do FAQ — animação suave de abrir e fechar.
      A altura da resposta transiciona via grid-template-rows (0fr ↔ 1fr);
      o <details> só fecha de verdade depois que a animação termina. */
